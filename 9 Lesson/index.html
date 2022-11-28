@@ -1,79 +1,172 @@
-index.html
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>STRICT</title>
-	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-utilities.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
-	<div class="line">
-		<div class="content">
-			<img src="Image/logo.png" class="logo">
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    	<img src="Image/logo.png" height="30">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ссылка 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ссылка 2</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+      	<li class="nav-item">
+          <a class="nav-link" href="#">Авторизация</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Регистрация</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="conteiner">
+	<div class="row">
+		<div class="col-md-4 p_col">
+			<img src="Image/Town.jpg" class="img-fluid">
 		</div>
-	</div>
-	<div class="head">
-		<div class="content">
-			<h1>STRICT</h1>
-			<div class="hr"></div>
-			<center>
-			<p class="p20 white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			<br><br>
-			<button class="my_button">Call to action</button>
-			</center>
+		<div class="col-md-4 p_col">
+			<img src="Image/Town.jpg" class="img-fluid">
 		</div>
-	</div>
-	<div class="spd">
-		<div class="content">
-			<h2>Simple & pure design</h2>
-			<p class="p20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="col-md-4 p_col">
+			<img src="Image/Town.jpg" class="img-fluid">
 		</div>
 	</div>
 
-	<div class="space"></div>
-
-	<div class="box_form">
-		<div class="content">
-			<center>
-				<h2 class="white p_corr">Stay with us</h2>
-				<p>Lorem ipsum dolor sit amet.</p>
-			</center>
-			<div class="form">
-				<form>
-					<input type="text" class="my_input" placeholder="Full name">
-					<input type="text" class="my_input" placeholder="Email Address">
-					<textarea class="my_input h150" placeholder="Message"></textarea>
-					<p class="white">
-						<label class="us">
-							<input type="checkbox"> Subscribe newsletter
-						</label>
-					</p>
-					<input type="reset" class="my_ibutton" value="Send">
-				</form>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="alert alert-primary" role="alert">
+  				Это основное уведомление — check it out!
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="alert alert-secondary" role="alert">
+  				Это основное уведомление — check it out!
+  				Это основное уведомление — check it out!
+  				Это основное уведомление — check it out!
+  				Это основное уведомление — check it out!
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="alert alert-success" role="alert">
+  				Это основное уведомление — check it out!
+  				Это основное уведомление — check it out!
+  				Это основное уведомление — check it out!
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="alert alert-danger" role="alert">
+  				Это основное уведомление — check it out!
+  				Это основное уведомление — check it out!
 			</div>
 		</div>
 	</div>
+</div>
 
-	<div class="foot">
-		<div class="content">
-			<p style="margin: 0px">Lorem ipsum dolor sit amet.
-				<a href="#" class="a_foot"><img src="Image/fb.png"></a>
-				<a href="#" class="a_foot"><img src="Image/fb.png"></a>
-				<a href="#" class="a_foot"><img src="Image/fb.png"></a>
-				<a href="#" class="a_foot"><img src="Image/fb.png"></a>
-			</p>
-		</div>
+<div class="row">
+	<div class="col-md-3 col-lg-2">
+		<img src="Image/user.png" class="img-fluid">
+		<input type="file" name="form-control">
 	</div>
+	<div class="col-md-9 col-lg-10">
+		<h2>User details</h2>
+		<form>
+			<input type="text" name="form-control" placeholder="bla-bla-bla"><br>
+			<div class="row">
+				<div class="col-6">
+					<input type="text" name="form-control" placeholder="login">
+				</div>
+				<div class="col-6">
+					<input type="password" name="form-control" placeholder="password">
+				</div>
+			</div>
+			<br>
+			<input type="reset" class="btn btn-warning">
+		</form>
+			<br>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  			Launch demo modal
+			</button>
+	</div>
+</div>
 
+<div class="row justify-content-center">
+	<hr>
+	<div class="col-md-4">
+		<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div>
+
+<br><br><br><br>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	<!-- Подключение Javascript -->
+	<!-- Обязательно первым подключение Jquery -->
+	<script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>
